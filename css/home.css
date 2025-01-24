@@ -123,19 +123,26 @@ h1 {
     font-size: 40px;
 }
 
- .s2{
+.s2 {
     width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
     background-color: #EBEFF8;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 10%;
     padding-bottom: 5%;
-    background-image: linear-gradient(to bottom, #93573f , #d07b59);
- }
- .s2-child{
+    background-image: linear-gradient(to bottom, #93573f, #d07b59);
+}
+.s2-child {
     display: flex;
     flex-direction: row;
- }
+    overflow: hidden;
+    position: relative;
+}
+    .s2-child:hover.photo {
+        transform: translateX(20px) translateY(-10px);
+    }
   .s2 .abouttext{
     font-family: "Crimson Text", serif;
     font-weight: 600;
